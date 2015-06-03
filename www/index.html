@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <title>Таблица успеваемости</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+    <label for="thereshold">Минимальная накопленная оценка: </label>
+    <input id="thereshold" type="text" onchange="load_data(this.value)" value="0.0">
+    <table>
+        <thead><tr>
+            <td>GitHub логин</td>
+            <td>1 задача</td>
+            <td>2 задача</td>
+            <td>3 модуль</td>
+        </tr></thead>
+        <tbody id="table_data">
+        </tbody>
+    </table>
+</body>
+</html>
