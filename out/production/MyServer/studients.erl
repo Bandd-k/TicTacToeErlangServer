@@ -1,13 +1,13 @@
 -module(studients).
--export([scores/3,add/3]).
+-export([scores/3,add/3,isWin/2]).
 -import(mod_esi, [deliver/2]).
 -include("student.hrl").
 
 studient_to_json(Entry) ->
-  lists:flatten(io_lib:format("{\"github_login\": \"~s\", \"score_first\": ~p, \"score_second\": ~p}", [
-    Entry#student.github_login,
-    Entry#student.score_first,
-    Entry#student.score_second
+  lists:flatten(io_lib:format("{\"login\": \"~s\", \"x\": ~p, \"y\": ~p}", [
+    Entry#student.login,
+    Entry#student.xcord,
+    Entry#student.ycord
   ])).
 
 list_to_json(Data) ->
@@ -40,5 +40,9 @@ add(SessionId, _Env,In) ->
   deliver(SessionId,integer_to_list(length(logic_server:get_all_names_and_scores(0))-length(Data)));
    true -> deliver(SessionId,0)
   end.
+
+
+isWin(SessionId, _Env) ->
+  deliver(SessionId,logic_server:someOneWon()).
 
 

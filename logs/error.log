@@ -624,3 +624,75 @@
                      [{file,"httpd_request_handler.erl"},{line,527}]},
                  {gen_server,try_dispatch,4,
                      [{file,"gen_server.erl"},{line,593}]}]
+[03/Jun/2015:20:01:14 +0300], module traverse failed: mod_esi:do => 
+   Error Type:  exit
+   Error:       {mod_esi_linked_process_died,<0.59.0>,normal}
+   Stack trace: [{mod_esi,receive_headers,1,[{file,"mod_esi.erl"},{line,437}]},
+                 {mod_esi,deliver_webpage_chunk,3,
+                     [{file,"mod_esi.erl"},{line,388}]},
+                 {mod_esi,erl_scheme_webpage_chunk,5,
+                     [{file,"mod_esi.erl"},{line,377}]},
+                 {mod_esi,generate_webpage,7,
+                     [{file,"mod_esi.erl"},{line,306}]},
+                 {httpd_response,traverse_modules,2,
+                     [{file,"httpd_response.erl"},{line,72}]},
+                 {httpd_response,generate_and_send_response,1,
+                     [{file,"httpd_response.erl"},{line,40}]},
+                 {httpd_request_handler,handle_response,1,
+                     [{file,"httpd_request_handler.erl"},{line,527}]},
+                 {gen_server,try_dispatch,4,
+                     [{file,"gen_server.erl"},{line,593}]}]
+[03/Jun/2015:20:01:17 +0300], module traverse failed: mod_esi:do => 
+   Error Type:  exit
+   Error:       {mod_esi_linked_process_died,<0.61.0>,normal}
+   Stack trace: [{mod_esi,receive_headers,1,[{file,"mod_esi.erl"},{line,437}]},
+                 {mod_esi,deliver_webpage_chunk,3,
+                     [{file,"mod_esi.erl"},{line,388}]},
+                 {mod_esi,erl_scheme_webpage_chunk,5,
+                     [{file,"mod_esi.erl"},{line,377}]},
+                 {mod_esi,generate_webpage,7,
+                     [{file,"mod_esi.erl"},{line,306}]},
+                 {httpd_response,traverse_modules,2,
+                     [{file,"httpd_response.erl"},{line,72}]},
+                 {httpd_response,generate_and_send_response,1,
+                     [{file,"httpd_response.erl"},{line,40}]},
+                 {httpd_request_handler,handle_response,1,
+                     [{file,"httpd_request_handler.erl"},{line,527}]},
+                 {gen_server,try_dispatch,4,
+                     [{file,"gen_server.erl"},{line,593}]}]
+[03/Jun/2015:20:04:05 +0300], module traverse failed: mod_esi:do => 
+   Error Type:  exit
+   Error:       {mod_esi_linked_process_died,<0.59.0>,normal}
+   Stack trace: [{mod_esi,receive_headers,1,[{file,"mod_esi.erl"},{line,437}]},
+                 {mod_esi,deliver_webpage_chunk,3,
+                     [{file,"mod_esi.erl"},{line,388}]},
+                 {mod_esi,erl_scheme_webpage_chunk,5,
+                     [{file,"mod_esi.erl"},{line,377}]},
+                 {mod_esi,generate_webpage,7,
+                     [{file,"mod_esi.erl"},{line,306}]},
+                 {httpd_response,traverse_modules,2,
+                     [{file,"httpd_response.erl"},{line,72}]},
+                 {httpd_response,generate_and_send_response,1,
+                     [{file,"httpd_response.erl"},{line,40}]},
+                 {httpd_request_handler,handle_response,1,
+                     [{file,"httpd_request_handler.erl"},{line,527}]},
+                 {gen_server,try_dispatch,4,
+                     [{file,"gen_server.erl"},{line,593}]}]
+[04/Jun/2015:01:13:02 +0300], module traverse failed: mod_esi:do => 
+   Error Type:  exit
+   Error:       {mod_esi_linked_process_died,<0.59.0>,normal}
+   Stack trace: [{mod_esi,receive_headers,1,[{file,"mod_esi.erl"},{line,437}]},
+                 {mod_esi,deliver_webpage_chunk,3,
+                     [{file,"mod_esi.erl"},{line,388}]},
+                 {mod_esi,erl_scheme_webpage_chunk,5,
+                     [{file,"mod_esi.erl"},{line,377}]},
+                 {mod_esi,generate_webpage,7,
+                     [{file,"mod_esi.erl"},{line,306}]},
+                 {httpd_response,traverse_modules,2,
+                     [{file,"httpd_response.erl"},{line,72}]},
+                 {httpd_response,generate_and_send_response,1,
+                     [{file,"httpd_response.erl"},{line,40}]},
+                 {httpd_request_handler,handle_response,1,
+                     [{file,"httpd_request_handler.erl"},{line,527}]},
+                 {gen_server,try_dispatch,4,
+                     [{file,"gen_server.erl"},{line,593}]}]

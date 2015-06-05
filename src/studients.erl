@@ -4,7 +4,7 @@
 -include("student.hrl").
 
 studient_to_json(Entry) ->
-  lists:flatten(io_lib:format("{\"github_login\": \"~s\", \"score_first\": ~p, \"score_second\": ~p}", [
+  lists:flatten(io_lib:format("{\"login\": \"~s\", \"x\": ~p, \"y\": ~p}", [
     Entry#student.login,
     Entry#student.xcord,
     Entry#student.ycord
@@ -44,5 +44,16 @@ add(SessionId, _Env,In) ->
 
 isWin(SessionId, _Env) ->
   deliver(SessionId,logic_server:someOneWon()).
+
+join(SessionId, _Env,In) ->
+  deliver(SessionId,logic_server:join(In)).
+
+leave(SessionId,_Env,In) ->
+  deliver(SessionId,logic_server:leave(In)).
+
+ready(SessionId,_Env,In) ->
+  deliver(SessionId,logic_server:ready()).
+
+
 
 
