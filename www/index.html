@@ -2,23 +2,28 @@
 <html>
 <head lang="ru">
     <meta charset="UTF-8">
-    <title>Таблица успеваемости</title>
-    <script type="text/javascript" src="jquery.js"></script>
-    <script type="text/javascript" src="scripts.js"></script>
+    <title>Rest API functions</title>
     <link type="text/css" rel="stylesheet" href="style.css">
 </head>
 <body>
-    <label for="thereshold">Минимальная накопленная оценка: </label>
-    <input id="thereshold" type="text" onchange="load_data(this.value)" value="0.0">
-    <table>
-        <thead><tr>
-            <td>GitHub логин</td>
-            <td>1 задача</td>
-            <td>2 задача</td>
-            <td>3 модуль</td>
-        </tr></thead>
-        <tbody id="table_data">
-        </tbody>
-    </table>
+<h2>Список функций</h2>
+<h3>http://localhost:8090/api/game/join/  </h3>
+<h4>Войти в игру; параметры: Name; ответ 1 - успешно, 0 - неуспешно</h4>
+<h3>http://localhost:8090/api/game/leave/  </h3>
+<h4>Покинуть игру; параметры: Name; ответ 1 - успешно, 0 - неуспешно</h4>
+<h3>http://localhost:8090/api/game/ready/  </h3>
+<h4>Зашло ли два игрока; параметры: нет; ответ 1 - оба игрока готовы, 0 - второго игрока нет</h4>
+<h3>http://localhost:8090/api/game/isWin/  </h3>
+<h4>Кто победил?; параметры: нет; ответ 0 - никто не победил, Строка имени победителя</h4>
+<h3>http://localhost:8090/api/game/add/  </h3>
+<h4>Сделать ход; параметры: Имя игрока,координата x, координата y;ответ 1 - успешно, 0 - неуспешно</h4>
+<h3>http://localhost:8090/api/game/cells/  </h3>
+<h4>Возвращает все заполненные клетки в формате JSON; параметры:нет;ответ [{"login":"","x":"","y":""}]</h4>
+<h3>http://localhost:8090/api/game/next/  </h3>
+<h4>Чей следующий ход?; параметры:Имя игрока;ответ 1 - ход введенного игрока, 0 - ход другого игрока</h4>
+<h3>http://localhost:8090/api/game/restart/  </h3>
+<h4>Обновляет поле?; параметры:нет;ответ 1 - успешно обновлено, 0 - неуспешно</h4>
+
+
 </body>
 </html>

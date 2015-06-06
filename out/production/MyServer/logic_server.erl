@@ -3,7 +3,7 @@
 
 -export([start_link/0]).
 -export([start/0]).
--export([get_all_names_and_scores/1, insert/1, insert/3,checkHalf/4,someOneWon/0,get_players/0,join/1,ready/0,leave/1,next/1]).
+-export([get_all_names_and_scores/1, insert/1, insert/3,checkHalf/4,someOneWon/0,get_players/0,join/1,ready/0,leave/1,next/1,restartGame/0]).
 
 -export([init/1,
   handle_call/3,
@@ -14,8 +14,8 @@
 
 -define(SERVER, ?MODULE).
 -define(LINK, {global, ?SERVER}).
--define(DB_FILENAME, "data/test7.tab").
--include("student.hrl").
+-define(DB_FILENAME, "data/test8k.tab").
+-include("cell.hrl").
 -record(condtition,{players = [],db}).
 start_link() ->
   io:format("Starting logic server~n"),
@@ -60,7 +60,11 @@ handle_call({join,Name},_From,State)->
 
 handle_call({leave,Name},_From,State)->
   X = lists:delete(Name,State#condtition.players),
-  {reply,1,#condtition{players = X,db = State#condtition.db}}.
+  {reply,1,#condtition{players = X,db = State#condtition.db}};
+
+handle_call({restart},_From,State)->
+  dets:delete_all_objects(State#condtition.db),
+  {reply,1,State}.
 
 get_players()->
   gen_server:call(?LINK,{get_players}).
@@ -94,14 +98,14 @@ get_all_names_and_scores(Thereshold) when is_function(Thereshold) ->
 
 get_all_names_and_scores(Thereshold) when is_number(Thereshold) ->
   StandardFunction = fun(Item) ->
-    Score = Item#student.ycord * 0.3 + Item#student.xcord * 0.7,
+    Score = Item#cell.ycord * 0.3 + Item#cell.xcord * 0.7,
     Score >= Thereshold
   end,
   get_all_names_and_scores(StandardFunction).
 
 insert(Studient) -> gen_server:cast(?LINK, {insert, Studient}).
 insert(Name, ScoreFirst, ScoreSecond) ->
-  insert(#student{login=Name, xcord =ScoreFirst, ycord=ScoreSecond}).
+  insert(#cell{login=Name, xcord =ScoreFirst, ycord=ScoreSecond}).
 
 ready()->
   X = length(get_players()),
@@ -130,6 +134,10 @@ next2(Name) ->
   if X == Name -> 0;
     true -> 1
   end.
+
+restartGame()->
+  gen_server:call(?LINK,{restart}).
+
 
 
 someOneWon()->

@@ -696,3 +696,301 @@
                      [{file,"httpd_request_handler.erl"},{line,527}]},
                  {gen_server,try_dispatch,4,
                      [{file,"gen_server.erl"},{line,593}]}]
+[06/Jun/2015:01:58:35 +0300], module traverse failed: mod_esi:do => 
+   Error Type:  error
+   Error:       function_clause
+   Stack trace: [{lists,flatten,[1],[{file,"lists.erl"},{line,614}]},
+                 {mod_esi,receive_headers,1,[{file,"mod_esi.erl"},{line,428}]},
+                 {mod_esi,deliver_webpage_chunk,3,
+                     [{file,"mod_esi.erl"},{line,388}]},
+                 {mod_esi,erl_scheme_webpage_chunk,5,
+                     [{file,"mod_esi.erl"},{line,377}]},
+                 {mod_esi,generate_webpage,7,
+                     [{file,"mod_esi.erl"},{line,306}]},
+                 {httpd_response,traverse_modules,2,
+                     [{file,"httpd_response.erl"},{line,72}]},
+                 {httpd_response,generate_and_send_response,1,
+                     [{file,"httpd_response.erl"},{line,40}]},
+                 {httpd_request_handler,handle_response,1,
+                     [{file,"httpd_request_handler.erl"},{line,527}]}]
+[06/Jun/2015:01:59:11 +0300], module traverse failed: mod_esi:do => 
+   Error Type:  error
+   Error:       function_clause
+   Stack trace: [{lists,flatten,[1],[{file,"lists.erl"},{line,614}]},
+                 {mod_esi,receive_headers,1,[{file,"mod_esi.erl"},{line,428}]},
+                 {mod_esi,deliver_webpage_chunk,3,
+                     [{file,"mod_esi.erl"},{line,388}]},
+                 {mod_esi,erl_scheme_webpage_chunk,5,
+                     [{file,"mod_esi.erl"},{line,377}]},
+                 {mod_esi,generate_webpage,7,
+                     [{file,"mod_esi.erl"},{line,306}]},
+                 {httpd_response,traverse_modules,2,
+                     [{file,"httpd_response.erl"},{line,72}]},
+                 {httpd_response,generate_and_send_response,1,
+                     [{file,"httpd_response.erl"},{line,40}]},
+                 {httpd_request_handler,handle_response,1,
+                     [{file,"httpd_request_handler.erl"},{line,527}]}]
+[06/Jun/2015:01:59:25 +0300], module traverse failed: mod_esi:do => 
+   Error Type:  exit
+   Error:       {mod_esi_linked_process_died,<0.63.0>,normal}
+   Stack trace: [{mod_esi,receive_headers,1,[{file,"mod_esi.erl"},{line,437}]},
+                 {mod_esi,deliver_webpage_chunk,3,
+                     [{file,"mod_esi.erl"},{line,388}]},
+                 {mod_esi,erl_scheme_webpage_chunk,5,
+                     [{file,"mod_esi.erl"},{line,377}]},
+                 {mod_esi,generate_webpage,7,
+                     [{file,"mod_esi.erl"},{line,306}]},
+                 {httpd_response,traverse_modules,2,
+                     [{file,"httpd_response.erl"},{line,72}]},
+                 {httpd_response,generate_and_send_response,1,
+                     [{file,"httpd_response.erl"},{line,40}]},
+                 {httpd_request_handler,handle_response,1,
+                     [{file,"httpd_request_handler.erl"},{line,527}]},
+                 {gen_server,try_dispatch,4,
+                     [{file,"gen_server.erl"},{line,593}]}]
+[06/Jun/2015:02:00:08 +0300], module traverse failed: mod_esi:do => 
+   Error Type:  exit
+   Error:       {mod_esi_linked_process_died,<0.58.0>,normal}
+   Stack trace: [{mod_esi,receive_headers,1,[{file,"mod_esi.erl"},{line,437}]},
+                 {mod_esi,deliver_webpage_chunk,3,
+                     [{file,"mod_esi.erl"},{line,388}]},
+                 {mod_esi,erl_scheme_webpage_chunk,5,
+                     [{file,"mod_esi.erl"},{line,377}]},
+                 {mod_esi,generate_webpage,7,
+                     [{file,"mod_esi.erl"},{line,306}]},
+                 {httpd_response,traverse_modules,2,
+                     [{file,"httpd_response.erl"},{line,72}]},
+                 {httpd_response,generate_and_send_response,1,
+                     [{file,"httpd_response.erl"},{line,40}]},
+                 {httpd_request_handler,handle_response,1,
+                     [{file,"httpd_request_handler.erl"},{line,527}]},
+                 {gen_server,try_dispatch,4,
+                     [{file,"gen_server.erl"},{line,593}]}]
+[06/Jun/2015:02:03:10 +0300], module traverse failed: mod_esi:do => 
+   Error Type:  error
+   Error:       function_clause
+   Stack trace: [{lists,flatten,[1],[{file,"lists.erl"},{line,614}]},
+                 {mod_esi,receive_headers,1,[{file,"mod_esi.erl"},{line,428}]},
+                 {mod_esi,deliver_webpage_chunk,3,
+                     [{file,"mod_esi.erl"},{line,388}]},
+                 {mod_esi,erl_scheme_webpage_chunk,5,
+                     [{file,"mod_esi.erl"},{line,377}]},
+                 {mod_esi,generate_webpage,7,
+                     [{file,"mod_esi.erl"},{line,306}]},
+                 {httpd_response,traverse_modules,2,
+                     [{file,"httpd_response.erl"},{line,72}]},
+                 {httpd_response,generate_and_send_response,1,
+                     [{file,"httpd_response.erl"},{line,40}]},
+                 {httpd_request_handler,handle_response,1,
+                     [{file,"httpd_request_handler.erl"},{line,527}]}]
+[06/Jun/2015:02:03:14 +0300], module traverse failed: mod_esi:do => 
+   Error Type:  error
+   Error:       function_clause
+   Stack trace: [{lists,flatten,[1],[{file,"lists.erl"},{line,614}]},
+                 {mod_esi,receive_headers,1,[{file,"mod_esi.erl"},{line,428}]},
+                 {mod_esi,deliver_webpage_chunk,3,
+                     [{file,"mod_esi.erl"},{line,388}]},
+                 {mod_esi,erl_scheme_webpage_chunk,5,
+                     [{file,"mod_esi.erl"},{line,377}]},
+                 {mod_esi,generate_webpage,7,
+                     [{file,"mod_esi.erl"},{line,306}]},
+                 {httpd_response,traverse_modules,2,
+                     [{file,"httpd_response.erl"},{line,72}]},
+                 {httpd_response,generate_and_send_response,1,
+                     [{file,"httpd_response.erl"},{line,40}]},
+                 {httpd_request_handler,handle_response,1,
+                     [{file,"httpd_request_handler.erl"},{line,527}]}]
+[06/Jun/2015:02:04:48 +0300], module traverse failed: mod_esi:do => 
+   Error Type:  error
+   Error:       function_clause
+   Stack trace: [{lists,flatten,[1],[{file,"lists.erl"},{line,614}]},
+                 {mod_esi,receive_headers,1,[{file,"mod_esi.erl"},{line,428}]},
+                 {mod_esi,deliver_webpage_chunk,3,
+                     [{file,"mod_esi.erl"},{line,388}]},
+                 {mod_esi,erl_scheme_webpage_chunk,5,
+                     [{file,"mod_esi.erl"},{line,377}]},
+                 {mod_esi,generate_webpage,7,
+                     [{file,"mod_esi.erl"},{line,306}]},
+                 {httpd_response,traverse_modules,2,
+                     [{file,"httpd_response.erl"},{line,72}]},
+                 {httpd_response,generate_and_send_response,1,
+                     [{file,"httpd_response.erl"},{line,40}]},
+                 {httpd_request_handler,handle_response,1,
+                     [{file,"httpd_request_handler.erl"},{line,527}]}]
+[06/Jun/2015:02:05:16 +0300], module traverse failed: mod_esi:do => 
+   Error Type:  error
+   Error:       function_clause
+   Stack trace: [{lists,flatten,[1],[{file,"lists.erl"},{line,614}]},
+                 {mod_esi,receive_headers,1,[{file,"mod_esi.erl"},{line,428}]},
+                 {mod_esi,deliver_webpage_chunk,3,
+                     [{file,"mod_esi.erl"},{line,388}]},
+                 {mod_esi,erl_scheme_webpage_chunk,5,
+                     [{file,"mod_esi.erl"},{line,377}]},
+                 {mod_esi,generate_webpage,7,
+                     [{file,"mod_esi.erl"},{line,306}]},
+                 {httpd_response,traverse_modules,2,
+                     [{file,"httpd_response.erl"},{line,72}]},
+                 {httpd_response,generate_and_send_response,1,
+                     [{file,"httpd_response.erl"},{line,40}]},
+                 {httpd_request_handler,handle_response,1,
+                     [{file,"httpd_request_handler.erl"},{line,527}]}]
+[06/Jun/2015:02:06:39 +0300], module traverse failed: mod_esi:do => 
+   Error Type:  error
+   Error:       function_clause
+   Stack trace: [{lists,flatten,
+                     [{error,bad_sessionID}],
+                     [{file,"lists.erl"},{line,614}]},
+                 {mod_esi,erl_scheme_webpage_whole,5,
+                     [{file,"mod_esi.erl"},{line,333}]},
+                 {httpd_response,traverse_modules,2,
+                     [{file,"httpd_response.erl"},{line,72}]},
+                 {httpd_response,generate_and_send_response,1,
+                     [{file,"httpd_response.erl"},{line,40}]},
+                 {httpd_request_handler,handle_response,1,
+                     [{file,"httpd_request_handler.erl"},{line,527}]},
+                 {gen_server,try_dispatch,4,
+                     [{file,"gen_server.erl"},{line,593}]},
+                 {gen_server,handle_msg,5,
+                     [{file,"gen_server.erl"},{line,659}]},
+                 {proc_lib,init_p_do_apply,3,
+                     [{file,"proc_lib.erl"},{line,237}]}]
+[06/Jun/2015:02:06:44 +0300], module traverse failed: mod_esi:do => 
+   Error Type:  error
+   Error:       function_clause
+   Stack trace: [{lists,flatten,
+                     [{error,bad_sessionID}],
+                     [{file,"lists.erl"},{line,614}]},
+                 {mod_esi,erl_scheme_webpage_whole,5,
+                     [{file,"mod_esi.erl"},{line,333}]},
+                 {httpd_response,traverse_modules,2,
+                     [{file,"httpd_response.erl"},{line,72}]},
+                 {httpd_response,generate_and_send_response,1,
+                     [{file,"httpd_response.erl"},{line,40}]},
+                 {httpd_request_handler,handle_response,1,
+                     [{file,"httpd_request_handler.erl"},{line,527}]},
+                 {gen_server,try_dispatch,4,
+                     [{file,"gen_server.erl"},{line,593}]},
+                 {gen_server,handle_msg,5,
+                     [{file,"gen_server.erl"},{line,659}]},
+                 {proc_lib,init_p_do_apply,3,
+                     [{file,"proc_lib.erl"},{line,237}]}]
+[06/Jun/2015:02:09:34 +0300], module traverse failed: mod_esi:do => 
+   Error Type:  error
+   Error:       function_clause
+   Stack trace: [{lists,flatten,
+                     [{error,bad_sessionID}],
+                     [{file,"lists.erl"},{line,614}]},
+                 {mod_esi,erl_scheme_webpage_whole,5,
+                     [{file,"mod_esi.erl"},{line,333}]},
+                 {httpd_response,traverse_modules,2,
+                     [{file,"httpd_response.erl"},{line,72}]},
+                 {httpd_response,generate_and_send_response,1,
+                     [{file,"httpd_response.erl"},{line,40}]},
+                 {httpd_request_handler,handle_response,1,
+                     [{file,"httpd_request_handler.erl"},{line,527}]},
+                 {gen_server,try_dispatch,4,
+                     [{file,"gen_server.erl"},{line,593}]},
+                 {gen_server,handle_msg,5,
+                     [{file,"gen_server.erl"},{line,659}]},
+                 {proc_lib,init_p_do_apply,3,
+                     [{file,"proc_lib.erl"},{line,237}]}]
+[06/Jun/2015:02:10:17 +0300], module traverse failed: mod_esi:do => 
+   Error Type:  error
+   Error:       function_clause
+   Stack trace: [{lists,flatten,
+                     [{error,bad_sessionID}],
+                     [{file,"lists.erl"},{line,614}]},
+                 {mod_esi,erl_scheme_webpage_whole,5,
+                     [{file,"mod_esi.erl"},{line,333}]},
+                 {httpd_response,traverse_modules,2,
+                     [{file,"httpd_response.erl"},{line,72}]},
+                 {httpd_response,generate_and_send_response,1,
+                     [{file,"httpd_response.erl"},{line,40}]},
+                 {httpd_request_handler,handle_response,1,
+                     [{file,"httpd_request_handler.erl"},{line,527}]},
+                 {gen_server,try_dispatch,4,
+                     [{file,"gen_server.erl"},{line,593}]},
+                 {gen_server,handle_msg,5,
+                     [{file,"gen_server.erl"},{line,659}]},
+                 {proc_lib,init_p_do_apply,3,
+                     [{file,"proc_lib.erl"},{line,237}]}]
+[06/Jun/2015:02:10:17 +0300], module traverse failed: mod_esi:do => 
+   Error Type:  error
+   Error:       function_clause
+   Stack trace: [{lists,flatten,
+                     [{error,bad_sessionID}],
+                     [{file,"lists.erl"},{line,614}]},
+                 {mod_esi,erl_scheme_webpage_whole,5,
+                     [{file,"mod_esi.erl"},{line,333}]},
+                 {httpd_response,traverse_modules,2,
+                     [{file,"httpd_response.erl"},{line,72}]},
+                 {httpd_response,generate_and_send_response,1,
+                     [{file,"httpd_response.erl"},{line,40}]},
+                 {httpd_request_handler,handle_response,1,
+                     [{file,"httpd_request_handler.erl"},{line,527}]},
+                 {gen_server,try_dispatch,4,
+                     [{file,"gen_server.erl"},{line,593}]},
+                 {gen_server,handle_msg,5,
+                     [{file,"gen_server.erl"},{line,659}]},
+                 {proc_lib,init_p_do_apply,3,
+                     [{file,"proc_lib.erl"},{line,237}]}]
+[06/Jun/2015:02:11:16 +0300], module traverse failed: mod_esi:do => 
+   Error Type:  error
+   Error:       function_clause
+   Stack trace: [{lists,flatten,
+                     [{error,bad_sessionID}],
+                     [{file,"lists.erl"},{line,614}]},
+                 {mod_esi,erl_scheme_webpage_whole,5,
+                     [{file,"mod_esi.erl"},{line,333}]},
+                 {httpd_response,traverse_modules,2,
+                     [{file,"httpd_response.erl"},{line,72}]},
+                 {httpd_response,generate_and_send_response,1,
+                     [{file,"httpd_response.erl"},{line,40}]},
+                 {httpd_request_handler,handle_response,1,
+                     [{file,"httpd_request_handler.erl"},{line,527}]},
+                 {gen_server,try_dispatch,4,
+                     [{file,"gen_server.erl"},{line,593}]},
+                 {gen_server,handle_msg,5,
+                     [{file,"gen_server.erl"},{line,659}]},
+                 {proc_lib,init_p_do_apply,3,
+                     [{file,"proc_lib.erl"},{line,237}]}]
+[06/Jun/2015:02:11:18 +0300], module traverse failed: mod_esi:do => 
+   Error Type:  error
+   Error:       function_clause
+   Stack trace: [{lists,flatten,
+                     [{error,bad_sessionID}],
+                     [{file,"lists.erl"},{line,614}]},
+                 {mod_esi,erl_scheme_webpage_whole,5,
+                     [{file,"mod_esi.erl"},{line,333}]},
+                 {httpd_response,traverse_modules,2,
+                     [{file,"httpd_response.erl"},{line,72}]},
+                 {httpd_response,generate_and_send_response,1,
+                     [{file,"httpd_response.erl"},{line,40}]},
+                 {httpd_request_handler,handle_response,1,
+                     [{file,"httpd_request_handler.erl"},{line,527}]},
+                 {gen_server,try_dispatch,4,
+                     [{file,"gen_server.erl"},{line,593}]},
+                 {gen_server,handle_msg,5,
+                     [{file,"gen_server.erl"},{line,659}]},
+                 {proc_lib,init_p_do_apply,3,
+                     [{file,"proc_lib.erl"},{line,237}]}]
+[06/Jun/2015:02:12:58 +0300], module traverse failed: mod_esi:do => 
+   Error Type:  error
+   Error:       function_clause
+   Stack trace: [{lists,flatten,
+                     [{error,bad_sessionID}],
+                     [{file,"lists.erl"},{line,614}]},
+                 {mod_esi,erl_scheme_webpage_whole,5,
+                     [{file,"mod_esi.erl"},{line,333}]},
+                 {httpd_response,traverse_modules,2,
+                     [{file,"httpd_response.erl"},{line,72}]},
+                 {httpd_response,generate_and_send_response,1,
+                     [{file,"httpd_response.erl"},{line,40}]},
+                 {httpd_request_handler,handle_response,1,
+                     [{file,"httpd_request_handler.erl"},{line,527}]},
+                 {gen_server,try_dispatch,4,
+                     [{file,"gen_server.erl"},{line,593}]},
+                 {gen_server,handle_msg,5,
+                     [{file,"gen_server.erl"},{line,659}]},
+                 {proc_lib,init_p_do_apply,3,
+                     [{file,"proc_lib.erl"},{line,237}]}]

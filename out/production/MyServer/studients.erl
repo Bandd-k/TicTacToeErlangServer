@@ -45,4 +45,15 @@ add(SessionId, _Env,In) ->
 isWin(SessionId, _Env) ->
   deliver(SessionId,logic_server:someOneWon()).
 
+join(SessionId, _Env,In) ->
+  deliver(SessionId,logic_server:join(In)).
+
+leave(SessionId,_Env,In) ->
+  deliver(SessionId,logic_server:leave(In)).
+
+ready(SessionId,_Env,In) ->
+  deliver(SessionId,logic_server:ready()).
+
+
+
 
