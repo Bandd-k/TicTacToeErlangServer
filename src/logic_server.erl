@@ -14,7 +14,7 @@
 
 -define(SERVER, ?MODULE).
 -define(LINK, {global, ?SERVER}).
--define(DB_FILENAME, "data/test8k.tab").
+-define(DB_FILENAME, "data/test9k.tab").
 -include("cell.hrl").
 -record(condtition,{players = [],db}).
 start_link() ->

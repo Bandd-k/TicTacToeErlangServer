@@ -1,13 +1,13 @@
--module(studients).
--export([scores/3,add/3,isWin/2]).
+-module(game).
+-export([cells/3,add/3,isWin/3,ready/3,join/3,leave/3,next/3,restart/3]).
 -import(mod_esi, [deliver/2]).
--include("student.hrl").
+-include("cell.hrl").
 
 studient_to_json(Entry) ->
   lists:flatten(io_lib:format("{\"login\": \"~s\", \"x\": ~p, \"y\": ~p}", [
-    Entry#student.login,
-    Entry#student.xcord,
-    Entry#student.ycord
+    Entry#cell.login,
+    Entry#cell.xcord,
+    Entry#cell.ycord
   ])).
 
 list_to_json(Data) ->
@@ -23,7 +23,7 @@ argument_to_float(Arg) ->
     {Value, []} -> Value
   end.
 
-scores(SessionId, _Env, In) ->
+cells(SessionId, _Env, In) ->
   Thereshold = argument_to_float(In),
   Data = logic_server:get_all_names_and_scores(Thereshold),
   DataJSON = list_to_json(Data),
@@ -42,18 +42,21 @@ add(SessionId, _Env,In) ->
   end.
 
 
-isWin(SessionId, _Env) ->
-  deliver(SessionId,logic_server:someOneWon()).
+isWin(SessionId, _Env,_) ->
+  deliver(SessionId,integer_to_list(logic_server:someOneWon())).
 
 join(SessionId, _Env,In) ->
-  deliver(SessionId,logic_server:join(In)).
+  deliver(SessionId,integer_to_list(logic_server:join(In))).
 
 leave(SessionId,_Env,In) ->
-  deliver(SessionId,logic_server:leave(In)).
+  deliver(SessionId,integer_to_list(logic_server:leave(In))).
 
-ready(SessionId,_Env,In) ->
-  deliver(SessionId,logic_server:ready()).
+ready(SessionId,_Env,_) ->
+  deliver(SessionId,integer_to_list(logic_server:ready())).
 
+next(SessionId,_Env,In)->
+  deliver(SessionId,integer_to_list(logic_server:next(In))).
 
-
+restart(SessionId,_Env,_)->
+  deliver(SessionId,integer_to_list(logic_server:restartGame())).
 
